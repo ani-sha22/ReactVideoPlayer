@@ -1,0 +1,202 @@
+body{
+    background-color: #0b0738;
+}
+
+h2{
+    color: aliceblue;
+    margin-left: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+  
+  /* File input styling */
+  input[type="file"] {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    padding: 10px;
+    background-color: #4F4A85;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  
+  /* Metadata and track information styling */
+  div > div {
+    margin-top: 20px;
+  }
+  
+  /* Video information styling */
+  p {
+    margin: 5px 0;
+  }
+  
+ 
+  
+  /* Play/Pause button styling */
+  div[style*="position: absolute"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #4F4A85;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-left: -25px; /* Center the button */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+
+  /* Waveform container styling */
+  div[style*="position: relative"] > div {
+    margin-top: 10px;
+  }
+  
+
+
+  .dropzone,.selected-file {
+    margin-top: 20px;
+    margin-left: 250px;
+    padding: 10px;
+    background-color: #ff0c9a60;
+    font-size: 0.6rem;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.3s ease;
+    width:60rem;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-family:'Courier New', Courier, monospace;
+   
+
+  }
+
+
+  
+  /* File input styling */
+  input[type="file"] {
+    display: none;
+  }
+
+
+  /*Sel*/
+  .selected-file {
+    margin-top: 20px;
+    margin-left: 250px;
+    padding: 10px;
+    background-color: #4F4A85;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+
+
+
+  .select-button {
+    background-color: #0b0738;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .select-button:hover {
+    cursor: pointer;
+    background-color: rgba(33, 255, 92, 0.564);
+  }
+  
+  /* Reupload button styling */
+  .reupload-button {
+    background-color: #0b0738;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+.reupload-button:hover{
+    cursor: pointer;
+    
+}
+
+
+
+
+  div[style*="position: relative"] {
+    text-align: center;
+    position: relative;
+    align-items: center;
+    margin-left: 250px;
+    top:10%;
+  }
+  
+  /* Play button styling */
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #25232c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-button:hover {
+    background-color: rgba(33, 255, 92, 0.564);
+  }
+  
+  /* Video player and waveform container styling */
+  .area {
+    display: flex;
+    flex-direction: column;
+    height: 65vh; /* 100% of the viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #000000;
+  
+  }
+  
+  .player-container,
+  .waveform-container {
+    width: 100%;
+    height: 26%; /* Adjust height as needed */
+    position: relative;
+  }
+  
+  .player-container {
+    background-color: #0b0738;
+    
+    
+  }
+
+  
+  /* Ensure the waveform is positioned below the React Player */
+  .waveform-container {
+    background-color: #0b0738;
+    top: 12%; /* Adjust as needed */
+    transform: translateY(-50%);
+  }
